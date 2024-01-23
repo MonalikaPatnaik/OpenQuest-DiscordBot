@@ -14,6 +14,7 @@ pytz = "^2023.3.post1"
 tatsu = "^5.8.3"
 ratelimit = "^2.2.1"
 reportlab = "^4.0.6"
+tatsu = "^5.5.0"
 discord-py = "^2.3.2"
 aiohttp = "^3.9.1"
 
