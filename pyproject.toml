@@ -8,8 +8,14 @@ authors = ["Your Name <you@example.com>"]
 python = ">=3.10.0,<3.11"
 discord = "^2.3.2"
 pymongo = "^4.5.0"
+docx = "^0.2.4"
 fpdf = "^1.7.2"
 pytz = "^2023.3.post1"
+tatsu = "^5.8.3"
+ratelimit = "^2.2.1"
+reportlab = "^4.0.6"
+discord-py = "^2.3.2"
+aiohttp = "^3.9.1"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
