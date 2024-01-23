@@ -11,8 +11,7 @@ import pytz
 from export import export_to_pdf
 from update_entry import update_participant_entry
 from update_streaks import update_streaks
-from wrapper import ApiWrapper
-import tatsu.data_structures
+
 
 client = discord.Client(intents=discord.Intents.all())
 
@@ -40,12 +39,7 @@ async def on_message(message):
 
         bot_mention = f'<@{client.user.id}>'
 
-        if message.content.startswith('!rank'):
-                # Fetch the user's rank card
-                id=message.author.id
-                wrapper = ApiWrapper(key="rxkLxig1Fx-7dQD5Y7kZQLOWzBMWwpPVf")
-                ranki = await wrapper.get_member_ranking(1158657622069760060, message.author.id)  # Await the function to get the result
-                await message.channel.send(ranki.rank)
+        
 
         if message.content.startswith('!get_pdf') and message.author.id == message.guild.owner.id:
           users_data = streaks_collection.find({"streak": 30})
