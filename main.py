@@ -99,5 +99,5 @@ async def on_message(message):
 
 
 
-my_secret = os.getenv["TOKEN"]
+my_secret = os.getenv("TOKEN")
 client.run(my_secret)
