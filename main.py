@@ -4,6 +4,9 @@ import discord
 from discord import app_commands
 from discord.message import Message
 import pymongo
+from dotenv import load_dotenv
+
+load_dotenv()
 import asyncio
 import re
 from datetime import datetime, timedelta
